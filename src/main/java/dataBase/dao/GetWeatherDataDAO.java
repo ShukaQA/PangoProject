@@ -33,6 +33,7 @@ public class GetWeatherDataDAO extends DataBasePool {
                 responseFromDbByCityPojo.setFeelsLike(resultSet.getDouble("feels_like"));
                 responseFromDbByCityPojo.setTempAvg(resultSet.getDouble("temp_avg"));
             }
+
         } catch (SQLException e) {
             LOGGER.info("Can't get weather data from DB");
         }
